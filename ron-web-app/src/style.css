@@ -266,6 +266,7 @@
 .popup-header {
   position: sticky;
   top: 0;
+  z-index: 2;
   cursor: move;
   background-color: #ffdca8;
   padding: 0.5rem 1rem;
@@ -274,7 +275,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-   border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
@@ -283,6 +284,7 @@
   font-family: 'Rubik Mono One', monospace;
   color: #2c2827;
   font-size: 0.95rem;
+  overflow-y:scroll;      
 }
 
 .close-btn {
