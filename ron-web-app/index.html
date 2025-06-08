@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ron Mañosca – Web Portfolio</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="bg-background text-foreground">
+
+ <!--Main Menu Page-->
+ <div class="retro-window-home">
+  <h1 class="jockeyOneRetroFont">
+  <span class="jockey-span-green">Ron</span>&nbsp;
+  <span class="jockey-span-blue">Mañosca</span>
+</h1>
+  <p class="rubikRetroFont">WEB PORTFOLIO!</p>
+  <p class="subText">GRAPHIC DESIGNER / UI & UX DESIGNER / FRONT END AMATEUR</p>
+
+  <div class="nav-buttons-home">
+  <button class="retro-button " id="openAboutBtn">About Me</button>
+  <button class="retro-button" id="openGalleryBtn">Gallery</button>
+  <button class="retro-button" id="openContactBtn">Contact</button>
+</div>
+
+
+<!-- About Me Popup Window -->
+<div id="aboutPopup" class="retro-popup hidden">
+  <div id="aboutHeader" class="popup-header">
+    <span>about_me.html</span>
+    <button class="close-btn" onclick="closePopup('#aboutPopup')">[X]</button>
+  </div>
+  <div class="popup-content">
+    <p>This is the About Me content...</p>
+    <p>This is the About Me content...</p>
+    <p>This is the About Me content...</p>
+    <p>This is the About Me content...</p>
+    <p>This is the About Me content...</p>
+    <p>This is the About Me content...</p>
+    <p>This is the About Me content...</p>
+    <p>This is the About Me content...</p>
+    <p>This is the About Me content...</p>
+    <p>This is the About Me content...</p>
+  </div>
+</div>
+
+<!-- Gallery Popup Window -->
+<div id="galleryPopup" class="retro-popup hidden">
+  <div id="galleryHeader" class="popup-header">
+    <span>gallery.html</span>
+    <button class="close-btn" onclick="closePopup('#galleryPopup')">[X]</button>
+  </div>
+  <div class="popup-content">
+    <p>This is the Gallery content...</p>
+     <p>This is the Gallery content...</p>
+      <p>This is the Gallery content...</p>
+       <p>This is the Gallery content...</p>
+        <p>This is the Gallery content...</p>
+         <p>This is the Gallery content...</p>
+          <p>This is the Gallery content...</p>
+           <p>This is the Gallery content...</p>
+            <p>This is the Gallery content...</p>
+             <p>This is the Gallery content...</p>
+              <p>This is the Gallery content...</p>
+               <p>This is the Gallery content...</p>
+</div>
+</div>
+<!-- Contact Popup Window -->
+<div id="contactPopup" class="retro-popup hidden">
+  <div id="contactHeader" class="popup-header">
+    <span>contact.html</span>
+    <button class="close-btn" onclick="closePopup('#contactPopup')">[X]</button>
+  </div>
+  <div class="popup-content">
+    <p>This is the Contact content...</p>
+       <p>This is the Contact content...</p>
+          <p>This is the Contact content...</p>
+             <p>This is the Contact content...</p>
+                <p>This is the Contact content...</p>
+                   <p>This is the Contact content...</p>
+                      <p>This is the Contact content...</p>
+                         <p>This is the Contact content...</p>
+                            <p>This is the Contact content...</p>
+  </div>
+</div>
+
+
+
+   <script type="module" src="/src/main.js"></script>
+  </body>
+  
+</html>
