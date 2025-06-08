@@ -299,3 +299,20 @@
 .hidden {
   display: none;
 }
+
+/* Transparent scrollbar for retro-popup (Webkit browsers) */
+.retro-popup::-webkit-scrollbar {
+  width: 12px;
+  background: transparent;
+}
+
+.retro-popup::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+/* Transparent scrollbar for Firefox */
+.retro-popup {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
