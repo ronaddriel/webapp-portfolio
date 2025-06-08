@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Rubik+Mono+One&family=Young+Serif&display=swap');
+
+@import 'tailwindcss';
+
+  body {
+   overflow: hidden;
+   height: 100%; 
+   background: var(--background);
+   color: var(--foreground);
+   font-feature-settings: "rlig" 1, "calt" 1;
+   font-family: 'Jockey One', sans-serif;
+  }
+
+  .font-jockey {
+    font-family: 'Jockey One', sans-serif;
+  }
+
+  .font-rubik {
+    font-family: 'Rubik Mono One', monospace;
+  }
+
+.nav-buttons-home {
+  display: flex;
+  gap: 5rem;
+  margin-top: 15.5rem;
+}
+
+.retro-button {
+  background-color: #fff8e7;
+  border: 2px solid #2c2827;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Jockey One', sans-serif;
+  font-size: 1.25rem;
+  color: #2c2827;
+  box-shadow: 3px 3px 0px #2c2827;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* Hover effect */
+.retro-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Click (active) effect */
+.retro-button:active {
+  transform: scale(0.95);
+  box-shadow: 2px 2px 0px #2c2827;
+}
+/* Retro Window Home */
+.retro-window-home {
+  background-color: #fffbee;
+  border: 3px solid #2c2827;
+  border-radius: 20px;
+  box-shadow: 4px 4px 0px #2c2827;
+  width: 851px;
+  height: 508px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: retroPopIn 0.6s ease-out;
+}
+
+/*Retro Animation*/
+@keyframes retroPopIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes retroPopupClose {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}
+
+.retroPopup-close {
+  animation: retroPopupClose 0.3s cubic-bezier(.68,-0.55,.27,1.55) forwards;
+}
+
+.font-jockey {
+  font-family: 'Jockey One', sans-serif;
+}
+
+.font-rubik {
+  font-family: 'Rubik Mono One', monospace;
+}
+
+.jockeyOneRetroFont{
+  font-family: 'Jockey One', sans-serif;
+   -webkit-text-stroke: 0.05rem #2c2827;
+  font-size: 6.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 0px #2c2827;
+  color: var(--retro-font-color, #80BCBD); /*fallback color*/
+  position: absolute;
+  top: 7.75rem; 
+  left: 4.44rem; 
+  width: 27.56rem; 
+  height: 7.63rem; 
+
+  font-size: 5.63rem; 
+  line-height: 1;
+  letter-spacing: 0.01rem; 
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.jockey-span-green {
+  color: #42d794;
+}
+
+.jockey-span-blue {
+  color: #4681ff;
+}
+
+.jockey-span-green, .jockey-span-blue {
+  -webkit-text-stroke: 0.05rem #2c2827;
+  text-shadow: 2px 2px 0px #2c2827;
+}
+
+.rubikRetroFont{
+  font-family: 'Rubik Mono One', monospace;
+  position: absolute;
+  top: 14.40rem;           
+  left: 13.40rem;          
+  width: 37.69rem;         
+  height: 3.13rem;         
+
+  font-size: 3rem;     
+  line-height: 1;      
+  letter-spacing: 0.06rem; 
+  color: #2c2827;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subText{
+  position: absolute;
+  top: 17rem;
+  left: 5.00rem;
+  width: 43.63rem;
+  height: 2.38rem;
+
+  font-family: 'Jockey One', sans-serif;
+  font-size: 1.50rem;
+  font-weight: bold;
+  color: #2c2827;
+
+  line-height: 1; /* since original line-height was 0 */
+  letter-spacing: 0.06rem;
+  padding: 0;
+  margin: 0;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .jockeyOneRetroFont {
+    font-size: 3.5rem;
+    top: 10rem;
+    left: 20rem;
+    width: 20rem;
+    height: auto;
+  }
+
+  .rubikRetroFont {
+    font-size: 1.6rem;
+    top: 13.80rem;
+    left: 10rem;
+    width: 90%;
+    height: auto;
+  }
+
+  .subText {
+    font-size: 1rem;
+    top: 15.50rem;
+    left: 10rem;
+    width: 90%;
+    height: auto;
+  }
+  
+}
+
+
+/* Popup Base Styles */
+.popup-window {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  width: 400px;
+  background-color: #fffbee;
+  border: 3px solid #2c2827;
+  border-radius: 12px;
+  box-shadow: 6px 6px 0 #2c2827;
+  z-index: 1000;
+  overflow: hidden;
+  font-family: 'Jockey One', sans-serif;
+}
+
+.retro-popup {
+  overflow: auto;         /* Enable scrolling when content overflows */
+  overflow-x: hidden;
+  position: absolute;
+  width: 400px;
+  max-height: 400px;      /* Set max height */
+  background-color: #fffbee;
+  border: 3px solid #2c2827;
+  border-radius: 8px;
+  box-shadow: 5px 5px 0 #2c2827;
+  z-index: 1000;
+
+}
+@keyframes retroPopupFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.retroPopup-fadein {
+  animation: retroPopupFadeIn 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.popup-header {
+  position: sticky;
+  top: 0;
+  cursor: move;
+  background-color: #ffdca8;
+  padding: 0.5rem 1rem;
+  font-family: 'Jockey One', sans-serif;
+  border-bottom: 3px solid #2c2827;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.popup-content {
+  padding: 1rem;
+  font-family: 'Rubik Mono One', monospace;
+  color: #2c2827;
+  font-size: 0.95rem;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #2c2827;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
