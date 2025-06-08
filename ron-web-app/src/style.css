@@ -234,11 +234,8 @@
 }
 
 .retro-popup {
-  overflow: auto;         /* Enable scrolling when content overflows */
-  overflow-x: hidden;
   position: absolute;
   width: 400px;
-  max-height: 400px;      /* Set max height */
   background-color: #fffbee;
   border: 3px solid #2c2827;
   border-radius: 8px;
@@ -284,7 +281,8 @@
   font-family: 'Rubik Mono One', monospace;
   color: #2c2827;
   font-size: 0.95rem;
-  overflow-y:scroll;      
+  max-height: 340px;
+  overflow-y: auto;      
 }
 
 .close-btn {
@@ -298,26 +296,4 @@
 
 .hidden {
   display: none;
-}
-
-/* Transparent scrollbar for retro-popup (Webkit browsers) */
-.retro-popup::-webkit-scrollbar {
-  width: 12px;
-  background: transparent;
-}
-
-.retro-popup::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
-}
-
-.retro-popup::-webkit-scrollbar-track {
-  background: transparent;
-  border: none;
-}
-
-/* Transparent scrollbar for Firefox */
-.retro-popup {
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
 }
