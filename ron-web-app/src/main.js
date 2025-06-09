@@ -3,7 +3,7 @@ import './style.css';
 let topZ = 1000; // Global z-index tracker
 
 function getRandomPosition(popupWidth, popupHeight) {
-  const padding = 40; // Prevents popup from touching the edge
+  const padding = 20; // Prevents popup from touching the edge
   const maxLeft = window.innerWidth - popupWidth - padding;
   const maxTop = window.innerHeight - popupHeight - padding;
   const left = Math.floor(Math.random() * (maxLeft - padding) + padding);
@@ -24,40 +24,49 @@ export function makeDraggable(popupSelector, headerSelector) {
     return;
   }
 
-   header.addEventListener("mousedown", (e) => {
+  header.addEventListener("mousedown", (e) => {
     isDragging = true;
     offsetX = e.clientX - popup.offsetLeft;
     offsetY = e.clientY - popup.offsetTop;
     header.style.cursor = "grabbing";
     topZ += 1;
     popup.style.zIndex = topZ;
-  });
-
-  header.addEventListener("mousedown", (e) => {
-    isDragging = true;
-    offsetX = e.clientX - popup.offsetLeft;
-    offsetY = e.clientY - popup.offsetTop;
-    header.style.cursor = "grabbing";
+    document.body.style.userSelect = "none";
   });
 
   document.addEventListener("mousemove", (e) => {
     if (!isDragging) return;
-    popup.style.left = `${e.clientX - offsetX}px`;
-    popup.style.top = `${e.clientY - offsetY}px`;
+
+    let newLeft = e.clientX - offsetX;
+    let newTop = e.clientY - offsetY;
+
+    // Clamp so header stays fully visible in the viewport (top and bottom)
+    const headerHeight = header.offsetHeight;
+    const minLeft = 0;
+    const maxLeft = window.innerWidth - popup.offsetWidth;
+    const minTop = 0;
+    const maxTop = window.innerHeight - headerHeight;
+
+    newLeft = Math.min(Math.max(newLeft, minLeft), maxLeft);
+    newTop = Math.min(Math.max(newTop, minTop), maxTop);
+
+    popup.style.left = `${newLeft}px`;
+    popup.style.top = `${newTop}px`;
   });
 
   document.addEventListener("mouseup", () => {
     if (isDragging) {
       isDragging = false;
       header.style.cursor = "grab";
+      document.body.style.userSelect = "";
     }
   });
+
   popup.addEventListener("mousedown", () => {
     topZ += 1;
     popup.style.zIndex = topZ;
   });
 }
- 
 
 
 function openPopup(popupSelector, headerSelector) {
