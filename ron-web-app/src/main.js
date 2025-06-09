@@ -82,6 +82,10 @@ function openPopup(popupSelector, headerSelector) {
 
   const popupWidth = popup.offsetWidth;
   const popupHeight = popup.offsetHeight;
+  const { left, top } = getRandomPosition(popupWidth, popupHeight);
+  popup.style.left = `${left}px`;
+  popup.style.top = `${top}px`;
+
 
 
   popup.addEventListener('animationend', function handler() {
