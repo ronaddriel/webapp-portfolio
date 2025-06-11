@@ -235,7 +235,8 @@
 
 .retro-popup {
   position: absolute;
-  width: 400px;
+  width: 700px;
+  height: 600px;
   background-color: #fffbee;
   border: 3px solid #2c2827;
   border-radius: 8px;
@@ -277,12 +278,16 @@
 }
 
 .popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* horizontal centering */
+  justify-content: center;  /* vertical centering */
   padding: 1rem;
   font-family: 'Rubik Mono One', monospace;
   color: #2c2827;
   font-size: 0.95rem;
-  max-height: 340px;
-  overflow-y: auto;      
+  max-height: 550px;
+  overflow-y: auto;    
 }
 
 .close-btn {
@@ -296,4 +301,77 @@
 
 .hidden {
   display: none;
+}
+
+.about-me-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* SVG image styling */
+.about-me-logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  margin-left: 1rem;
+  
+}
+.contact-me-logo-img{
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  margin-left: 1rem;
+}
+
+.contactMeDescription{
+  font-family: 'Rubik Mono One', monospace;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.2;
+  color: #2d2626;
+  font-size: 0.9rem;
+  letter-spacing: 0.001rem;
+}
+
+.aboutMeDescription {
+  font-family: 'Rubik Mono One', monospace;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.2;
+  color: #2d2626;
+  font-size: 0.9rem;
+  letter-spacing: 0.001rem;
+}
+
+.galleryPopupDescription {
+  font-family: 'Rubik Mono One', monospace;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.2;
+  color: #2d2626;
+  font-size: 0.9rem;
+  letter-spacing: 0.001rem;
+}
+
+#aboutPopup{
+  width: 700px;
+  height: 500px;
+}
+
+#galleryPopup{
+  width: 1000px;
+  height: 800px;
+}
+#contactPopup{
+  width: 700px;
+  height: 500px;
 }
