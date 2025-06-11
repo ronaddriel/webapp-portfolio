@@ -447,7 +447,7 @@
     border-radius: 12px;
   }
   #aboutPopup .popup-content {
-    max-height: 70vh;
+    max-height: 80vh;
     padding: 0.5rem;
     font-size: 0.95rem;
   }
@@ -460,8 +460,70 @@
     padding: 0.5rem 0.2rem;
   }
   .about-me-logo-img {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: 0.5rem;
+  }
+}
+
+
+@media (max-width: 600px) {
+  #galleryPopup {
+    width: 95vw;
+    height: 90vh;
+    min-width: 0;
+    min-height: 0;
+    left: 2.5vw !important;
+    top: 5vh !important;
+    border-radius: 12px;
+  }
+  #galleryPopup .popup-content {
+    max-height: 80vh;
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+  .galleryBioBox {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.95rem;
+  }
+  .galleryDescription {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.2rem;
+  }
+  .gallery-logo-img {
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: 0.5rem;
+  }
+}
+
+
+@media (max-width: 600px) {
+  #contactPopup {
+    width: 95vw;
+    height: 90vh;
+    min-width: 0;
+    min-height: 0;
+    left: 2.5vw !important;
+    top: 5vh !important;
+    border-radius: 12px;
+  }
+  #contactPopup .popup-content {
+    max-height: 80vh;
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+  .contactBioBox {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.95rem;
+  }
+  .contactMeDescription {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.2rem;
+  }
+  .contact-me-logo-img {
+    max-width: 500px;
+    max-height: 500px;
     margin-left: 0.5rem;
   }
 }
