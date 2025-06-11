@@ -421,3 +421,13 @@
   line-height: 1.6;
   text-indent: 2em;
 }
+
+
+/* Hide scrollbar for Chrome, Edge, Safari */
+.popup-content {
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE and Edge */
+}
+.popup-content::-webkit-scrollbar {
+  display: none;                  /* Chrome, Safari, Opera */
+}
