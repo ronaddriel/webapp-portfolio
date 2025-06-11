@@ -460,8 +460,8 @@
     padding: 0.5rem 0.2rem;
   }
   .about-me-logo-img {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 400px;
+    max-height: 400px;
     margin-left: 0.5rem;
   }
 }
@@ -491,8 +491,8 @@
     padding: 0.5rem 0.2rem;
   }
   .gallery-logo-img {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 400px;
+    max-height: 400px;
     margin-left: 0.5rem;
   }
 }
@@ -522,8 +522,8 @@
     padding: 0.5rem 0.2rem;
   }
   .contact-me-logo-img {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 400px;
+    max-height: 400px;
     margin-left: 0.5rem;
   }
 }
