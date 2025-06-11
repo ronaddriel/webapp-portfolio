@@ -351,6 +351,7 @@
   color: #2d2626;
   font-size: 0.9rem;
   letter-spacing: 0.001rem;
+  margin-top: 1rem;
 }
 
 .aboutMeDescription {
@@ -360,8 +361,9 @@
   margin-right: auto;
   line-height: 1.2;
   color: #2d2626;
-  font-size: 0.9rem;
-  letter-spacing: 0.001rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+
 }
 
 .galleryPopupDescription {
@@ -400,22 +402,29 @@
   font-family: 'Young Serif', serif;
   font-size: 1rem;
   color: #2c2827;
-  border-radius: 10px;
   padding: 1.2rem 1.5rem;
   margin: 1.2rem 0;
   line-height: 1.6;
   letter-spacing: 0.01em;
+  
 }
 
 .aboutMeBioBox {
-  border: 2.5px solid #2c2827;
-  box-shadow: inset -4px -4px 0px #2c2827;
+  background-color: #fffcef;
+  border: 2px solid #2c2827;
+  box-shadow: 4px 4px 0px #2c2827;
   padding: 1rem 1.2rem;
   margin-bottom: 1rem;
-  border-radius: 10px;
+  border-radius: 11px;
   overflow: hidden;
   transition: transform 0.25s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.25s;
   cursor: pointer;
+}
+
+.aboutMeBioBox ul {
+  list-style: disc inside;
+  padding-left: 1.2em; 
+  margin: 0.5em 0;
 }
 
 .aboutMeBioBox:hover{
@@ -430,7 +439,7 @@
 .aboutMeBioBox p {
   margin: 0;
   font-family: 'Young Serif', serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #2c2827;
   line-height: 1.6;
   text-indent: 2em;
