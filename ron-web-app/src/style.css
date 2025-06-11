@@ -237,7 +237,7 @@
   position: absolute;
   width: 700px;
   height: 600px;
-  background-color: #fffbee;
+  background-color: #fff9e4;
   border: 3px solid #2c2827;
   border-radius: 8px;
   box-shadow: 5px 5px 0 #2c2827;
@@ -266,7 +266,7 @@
   top: 0;
   z-index: 2;
   cursor: move;
-  background-color: #ffdca8;
+  background-color: #8df8bf;
   padding: 0.5rem 1rem;
   font-family: 'Jockey One', sans-serif;
   border-bottom: 3px solid #2c2827;
@@ -281,7 +281,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;      /* horizontal centering */
-  justify-content: center;  /* vertical centering */
   padding: 1rem;
   font-family: 'Rubik Mono One', monospace;
   color: #2c2827;
@@ -363,15 +362,62 @@
 }
 
 #aboutPopup{
-  width: 700px;
-  height: 500px;
+  width: 800px;
+  height: 600px;
 }
-
+#aboutPopup .popup-content {
+  max-height: 550px; /* or your desired value */
+}
 #galleryPopup{
-  width: 1000px;
+  width: 900px;
   height: 800px;
+}
+#galleryPopup .popup-content {
+  max-height: 750px; /* or your desired value */
 }
 #contactPopup{
   width: 700px;
   height: 500px;
+}
+#contactPopup .popup-content {
+  max-height: 450px; /* or your desired value */
+}
+.aboutMeBio {
+  font-family: 'Young Serif', serif;
+  font-size: 1rem;
+  color: #2c2827;
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  margin: 1.2rem 0;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+.aboutMeBioBox {
+  border: 2.5px solid #2c2827;
+  box-shadow: inset -4px -4px 0px #2c2827;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.25s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.25s;
+  cursor: pointer;
+}
+
+.aboutMeBioBox:hover{
+ transform: scale(1.03);
+ z-index: 2;
+}
+
+.aboutMeBioBox:last-child {
+  margin-bottom: 0;
+}
+
+.aboutMeBioBox p {
+  margin: 0;
+  font-family: 'Young Serif', serif;
+  font-size: 1rem;
+  color: #2c2827;
+  line-height: 1.6;
+  text-indent: 2em;
 }
