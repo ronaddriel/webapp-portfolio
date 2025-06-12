@@ -11,6 +11,8 @@
 
  <!--Main Menu Page-->
  <div class="retro-window-home">
+  <div class="main-menu-header">
+    <span>main-menu.html</span> </div>
   <h1 class="jockeyOneRetroFont">
   <span class="jockey-span-green">Ron</span>&nbsp;
   <span class="jockey-span-blue">Mañosca</span>
@@ -29,7 +31,7 @@
 <!-- About Me Popup Window -->
 <div id="aboutPopup" class="retro-popup hidden">
   <div id="aboutHeader" class="popup-header">
-    <span>about_me.html</span>
+    <span>about-me.html</span>
     <button class="close-btn" onclick="closePopup('#aboutPopup')">[X]</button>
   </div>
   <div class="popup-content">
@@ -46,9 +48,9 @@
         <p>I'm always eager to push myself, refine my skills, and explore new techniques. Creativity is my way of connecting ideas and bringing them to life.</p>
         <p>But most importantly, I believe in having fun, and not take myself too seriously!</p>
       </div>
-    <div>
+    </div>
     <p class="aboutMeDescription" style="margin-top: 2rem;">Things I enjoy!</p>
-     <p style="text-align: center;">When I'm not working on my projects, you can find me enjoying:</p>
+     <p style="text-align: center; margin-top: 1rem;">When I'm not working on my projects, you can find me enjoying:</p>
     <div class="aboutMeBioBox" style="margin-top: 10px; width: 320px; margin-left: auto; margin-right: auto;">
       <ul>
         <li>Horror Games</li>
@@ -59,11 +61,9 @@
         <li>Buldak Ramen (Carbonara)</li>
         <li>Matcha + Ube</li>
       </ul>
-     </div> 
-     </div>  
-    </div>
+     </div>
+    </div>  
   </div>
-</div>
 
   <!-- Gallery Popup Window -->
     <div id="galleryPopup" class="retro-popup hidden">
@@ -75,9 +75,77 @@
         <div class="gallery-logo">
           <img src="/art_gallery/art_gallery.svg" alt="Gallery Logo" class="gallery-logo-img">
         </div>
-        <p class="galleryDescription">Explore my collection of graphic designs!</p>
+        <p class="galleryDescription">Explore my collection of works!</p>
+      
+      <!--Illustrations-->
+      <p class="galleryDescription" style="margin-left: 1rem; margin-top: 4rem;">Illustrations</p>
+      <div class="gallery-grid-box">
+      <div class="gallery-grid">
+       <div class="gallery-item">
+        <img src="/art_gallery/art/thumbs/2d/2D-01.jpg" alt="Artwork 1" onclick="openFullImage('/art_gallery/art/fulls/2d/2D-01.jpg')">
+      </div>
+      <div class="gallery-item">
+        <img src="/art_gallery/art/thumbs/2d/2D-02.jpg" alt="Artwork 2" onclick="openFullImage('/art_gallery/art/fulls/2d/2D-02.jpg')">
+      </div>
+      <div class="gallery-item">
+        <img src="/art_gallery/art/thumbs/2d/2D-03.jpg" alt="Artwork 3" onclick="openFullImage('/art_gallery/art/fulls/2d/2D-03.jpg')">
+      </div>
+      <div class="gallery-item">
+        <img src="/art_gallery/art/thumbs/2d/2D-04.jpg" alt="Artwork 4" onclick="openFullImage('/art_gallery/art/fulls/2d/2D-04.jpg')">
+      </div>
       </div>
     </div>
+
+      <!--Models-->
+      <p class="galleryDescription" style="margin-left: 1rem; margin-top: 4rem;">3D Models</p>
+      <div class="gallery-grid-box">
+      <div class="gallery-grid">
+         <div class="gallery-item">
+        <img src="/art_gallery/art/thumbs/3d/3D-01.jpg" alt="Artwork 1" onclick="openFullImage('/art_gallery/art/fulls/3d/3D-01.jpg')">
+      </div>
+      <div class="gallery-item">
+        <img src="/art_gallery/art/thumbs/3d/3D-02.jpg" alt="Artwork 2" onclick="openFullImage('/art_gallery/art/fulls/3d/3D-02.jpg')">
+      </div>
+      <div class="gallery-item">
+        <img src="/art_gallery/art/thumbs/3d/3D-03.jpg" alt="Artwork 3" onclick="openFullImage('/art_gallery/art/fulls/3d/3D-03.jpg')">
+      </div>
+      <div class="gallery-item">
+        <img src="/art_gallery/art/thumbs/3d/3D-04.jpg" alt="Artwork 4" onclick="openFullImage('/art_gallery/art/fulls/3d/3D-04.jpg')">
+      </div>
+      </div>
+      </div> 
+
+
+      <!--Videos-->
+    <p class="galleryDescription" style="margin-left: 1rem; margin-top: 4rem;">Videos</p>
+  
+  <div class="video-responsive">
+    <iframe
+      src="https://www.youtube.com/embed/arhUXsvEyMg"
+      title="YouTube video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="video-responsive">
+    <iframe
+      src="https://www.youtube.com/embed/yivygBY-Ox8?si=XiH1i9dmi2cLST-o"
+      title="YouTube video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+
+  </div>
+</div>
+
+<!-- Full Image Modal -->
+<div id="fullImageViewer" class="full-image-viewer hidden" onclick="this.classList.add('hidden')">
+  <img id="fullImage" src="" alt="Full View">
+</div>
 
  <!-- Contact Popup Window -->
     <div id="contactPopup" class="retro-popup hidden">
