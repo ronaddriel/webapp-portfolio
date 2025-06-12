@@ -2,6 +2,14 @@ import './style.css';
 
 let topZ = 1000; // Global z-index tracker
 
+function openFullImage(imageSrc) {
+  const viewer = document.getElementById('fullImageViewer');
+  const fullImage = document.getElementById('fullImage');
+  fullImage.src = imageSrc;
+  viewer.classList.remove('hidden');
+}
+window.openFullImage = openFullImage;
+
 function getRandomPosition(popupWidth, popupHeight) {
   const padding = 20; // Prevents popup from touching the edge
   const maxLeft = window.innerWidth - popupWidth - padding;

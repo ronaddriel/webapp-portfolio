@@ -51,7 +51,7 @@
 }
 /* Retro Window Home */
 .retro-window-home {
-  background-color: #fffbee;
+ background-color: #fffbee;
   border: 3px solid #2c2827;
   border-radius: 20px;
   box-shadow: 4px 4px 0px #2c2827;
@@ -60,16 +60,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;  
   text-align: center;
   padding: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: retroPopIn 0.6s ease-out;
 }
-
+.main-menu-header {
+  align-self: stretch;        
+  font-family: 'jockey One', sans-serif;
+  color: #2c2827;
+  border-top-left-radius: 17.5px;
+  border-top-right-radius: 17.5px;
+  border-bottom: 3px solid #2c2827;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: #5bffad;
+  font-size: 1.2rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
+}
 /*Retro Animation*/
 @keyframes retroPopIn {
   0% {
@@ -120,7 +138,6 @@
   left: 4.44rem; 
   width: 27.56rem; 
   height: 7.63rem; 
-
   font-size: 5.63rem; 
   line-height: 1;
   letter-spacing: 0.01rem; 
@@ -275,6 +292,7 @@
   align-items: center;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  font-family: 'jockey One', sans-serif;
 }
 
 .popup-content {
@@ -366,14 +384,14 @@
 
 }
 
-.galleryPopupDescription {
+.galleryDescription {
   font-family: 'Rubik Mono One', monospace;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.2;
   color: #2d2626;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   letter-spacing: 0.001rem;
 }
 
@@ -385,7 +403,7 @@
   max-height: 550px; /* or your desired value */
 }
 #galleryPopup{
-  width: 900px;
+  width: 1200px;
   height: 800px;
 }
 #galleryPopup .popup-content {
@@ -416,7 +434,6 @@
   padding: 1rem 1.2rem;
   margin-bottom: 1rem;
   border-radius: 11px;
-  overflow: hidden;
   transition: transform 0.25s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.25s;
   cursor: pointer;
 }
@@ -425,6 +442,8 @@
   list-style: disc inside;
   padding-left: 1.2em; 
   margin: 0.5em 0;
+  font-family: 'Young Serif', serif;
+  font-size: 1.1rem;
 }
 
 .aboutMeBioBox:hover{
@@ -555,4 +574,97 @@
 .popup-content {
   scrollbar-color: #888 transparent; /* thumb color, track color */
   scrollbar-width: thin;
+}
+
+/* Gallery */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+.gallery-grid-box {
+  background: #fffcef;
+  border: 3px solid #2c2827;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 #2c2827;
+  padding: 2rem;
+  margin: 2rem 0;
+  transition: transform 0.25s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.25s;
+}
+
+.gallery-grid-box:hover {
+  transform: scale(1.01);
+  box-shadow: 5px 5px 0 #2c2827;
+  z-index: 2;
+}
+.gallery-item {
+  background: #fffcef;
+  border: 2px solid #2c2827;
+  border-radius: 10px;
+  box-shadow: 2px 2px 0 #e0d6c3;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: scale(1.04);
+  z-index: 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+/* Responsive: stack columns on small screens */
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.full-image-viewer {
+  position: fixed;
+  inset: 0;
+  background: rgba(30, 30, 30, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.full-image-viewer img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px #000a;
+}
+.full-image-viewer.hidden {
+  display: none;
+}
+.video-responsive {
+ position: relative;
+  padding-bottom: 30.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 500px;     
+  margin: 2rem auto;    
+  width: 100%;
+  border: #2c2827 5px solid;
+  border-radius: 10px;
+}
+.video-responsive iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
