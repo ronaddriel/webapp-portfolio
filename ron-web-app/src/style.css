@@ -23,13 +23,13 @@
 .nav-buttons-home {
   display: flex;
   gap: 5rem;
-  margin-top: 15.5rem;
+  margin-top: 20.5rem;
 }
 
 .retro-button {
-  background-color: #fff8e7;
-  border: 2px solid #2c2827;
-  border-radius: 0.5rem;
+  background-color: #ffda84;
+  border: 3px solid #2c2827;
+  border-radius: 3rem;
   padding: 0.75rem 1.5rem;
   font-family: 'Jockey One', sans-serif;
   font-size: 1.25rem;
@@ -38,10 +38,21 @@
   cursor: pointer;
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
-
+.btn-about {
+  background-color: #fa7070; 
+  
+}
+.btn-gallery {
+  background-color: #f9ff88; 
+ 
+}
+.btn-contact {
+  background-color: #7cd1fb;
+}
 /* Hover effect */
 .retro-button:hover {
   transform: translateY(-2px);
+  scale:calc(1.05);
 }
 
 /* Click (active) effect */
@@ -51,7 +62,7 @@
 }
 /* Retro Window Home */
 .retro-window-home {
- background-color: #fffbee;
+ background-color: #fff4d2;
   border: 3px solid #2c2827;
   border-radius: 20px;
   box-shadow: 4px 4px 0px #2c2827;
@@ -81,7 +92,7 @@
   border-bottom: 3px solid #2c2827;
   letter-spacing: 1px;
   text-align: center;
-  background-color: #5bffad;
+  background-color: #63f6aa;
   font-size: 1.2rem;
   width: 100%;
   box-sizing: border-box;
@@ -126,6 +137,20 @@
   font-family: 'Rubik Mono One', monospace;
 }
 
+.ronManosca{
+  position: absolute;
+  top: 7.75rem; 
+  left: 0.44rem; 
+  width: 40rem; 
+  letter-spacing: 0.01rem; 
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .jockeyOneRetroFont{
   font-family: 'Jockey One', sans-serif;
    -webkit-text-stroke: 0.05rem #2c2827;
@@ -166,11 +191,10 @@
 .rubikRetroFont{
   font-family: 'Rubik Mono One', monospace;
   position: absolute;
-  top: 14.40rem;           
+  top: 17.40rem;           
   left: 13.40rem;          
   width: 37.69rem;         
   height: 3.13rem;         
-
   font-size: 3rem;     
   line-height: 1;      
   letter-spacing: 0.06rem; 
@@ -186,21 +210,17 @@
 
 .subText{
   position: absolute;
-  top: 17rem;
+  top: 21rem;
   left: 5.00rem;
   width: 43.63rem;
   height: 2.38rem;
-
   font-family: 'Jockey One', sans-serif;
   font-size: 1.50rem;
-  font-weight: bold;
   color: #2c2827;
-
-  line-height: 1; /* since original line-height was 0 */
+  line-height: 1;
   letter-spacing: 0.06rem;
   padding: 0;
   margin: 0;
-
   text-align: center;
   display: flex;
   align-items: center;
@@ -403,11 +423,11 @@
   max-height: 550px; /* or your desired value */
 }
 #galleryPopup{
-  width: 1200px;
-  height: 800px;
+  width: 1050px;
+  height: 700px;
 }
 #galleryPopup .popup-content {
-  max-height: 750px; /* or your desired value */
+  max-height: 650px; /* or your desired value */
 }
 #contactPopup{
   width: 700px;
@@ -667,4 +687,23 @@
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.footer {
+  width: 100%;
+  background: #fff4d2;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-family: 'Rubik Mono One', monospace;
+  color: #2c2827;
+  letter-spacing: 1px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+}
+.footer-text {
+  margin: 0;
+  font-size: 0.7rem;
+  opacity: 0.85;
 }
