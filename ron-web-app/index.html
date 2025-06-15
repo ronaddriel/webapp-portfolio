@@ -10,29 +10,29 @@
   <body class="bg-background text-foreground">
 
  <!--Main Menu Page-->
- <div class="retro-window-home">
-  <div class="main-menu-header">
-    <span>main-menu.html</span> </div>
-  <h1 class="jockeyOneRetroFont">
-  <span class="jockey-span-green">Ron</span>&nbsp;
-  <span class="jockey-span-blue">Mañosca</span>
-</h1>
-  <p class="rubikRetroFont">WEB PORTFOLIO!</p>
-  <p class="subText">graphic design / front-end amateur / user experience</p>
+    <div class="retro-window-home">
+      <div class="main-menu-header">
+        <span>main-menu.html</span>
+      </div>
+      <h1>
+        <img class="ronManosca" src="/public/ron-full-name.svg" alt="Ron Mañosca Logo" class="logo-img">
+      </h1>
+      <p class="rubikRetroFont">WEB PORTFOLIO!</p>
+      <p class="subText">graphic design + front-end amateur + user experience</p>
 
-  <div class="nav-buttons-home">
-  <button class="retro-button " id="openAboutBtn">About Me</button>
-  <button class="retro-button" id="openGalleryBtn">Gallery</button>
-  <button class="retro-button" id="openContactBtn">Contact</button>
-</div>
-</div>
+      <div class="nav-buttons-home">
+        <button class="retro-button btn-about" id="openAboutBtn">About Me</button>
+        <button class="retro-button btn-gallery" id="openGalleryBtn">Gallery</button>
+        <button class="retro-button btn-contact" id="openContactBtn">Contact</button>
+      </div>
+    </div>
 
 
 <!-- About Me Popup Window -->
 <div id="aboutPopup" class="retro-popup hidden">
   <div id="aboutHeader" class="popup-header">
-    <span>about-me.html</span>
-    <button class="close-btn" onclick="closePopup('#aboutPopup')">[X]</button>
+    <span>ron-about-me.html</span>
+    <button class="close-btn" onclick="closePopup('#aboutPopup')">[ X ]</button>
   </div>
   <div class="popup-content">
     <div class="about-me-logo">
@@ -44,7 +44,7 @@
         <p>I'm currently a senior at Lehman College, majoring in Computer Graphics & Imaging (CGI). I have a deep passion for creating art through digital tools — whether I'm using my computer or sketching ideas on my iPad!</p>
         <p>My creative work spans across graphic design, illustration, UI/UX design, and a bit of front-end development. As a jack of all trades, I have experience in both 2D and 3D art, along with a strong background in typography, light video editing, and some coding.</p>
     </div>  
-        <div class="aboutMeBioBox">
+        <div class="aboutMeBioBox" style="margin-top: 3rem;">
         <p>I'm always eager to push myself, refine my skills, and explore new techniques. Creativity is my way of connecting ideas and bringing them to life.</p>
         <p>But most importantly, I believe in having fun, and not take myself too seriously!</p>
       </div>
@@ -68,8 +68,8 @@
   <!-- Gallery Popup Window -->
     <div id="galleryPopup" class="retro-popup hidden">
       <div id="galleryHeader" class="popup-header">
-        <span>gallery.html</span>
-        <button class="close-btn" onclick="closePopup('#galleryPopup')">[X]</button>
+        <span>ron-gallery.html</span>
+        <button class="close-btn" onclick="closePopup('#galleryPopup')">[ X ]</button>
       </div>
       <div class="popup-content">
         <div class="gallery-logo">
@@ -150,8 +150,8 @@
  <!-- Contact Popup Window -->
     <div id="contactPopup" class="retro-popup hidden">
       <div id="contactHeader" class="popup-header">
-        <span>contact.html</span>
-        <button class="close-btn" onclick="closePopup('#contactPopup')">[X]</button>
+        <span>ron-contact.html</span>
+        <button class="close-btn" onclick="closePopup('#contactPopup')">[ X ]</button>
       </div>
       <div class="popup-content">
         <div class="contact-me-logo">
@@ -160,6 +160,11 @@
         <p class="contactMeDescription">Feel free to reach out to me for any inquiries or collaborations!</p>
       </div>
     </div>
+
+<!-- Footer -->
+    <footer class="footer">
+      <p class="footer-text">© 2025 Ron Mañosca. All rights reserved.</p>
+    </footer>
 
 
 <script type="module" src="/src/main.js"></script>
