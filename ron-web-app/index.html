@@ -19,9 +19,9 @@
       </h1>
       <img class="character-img01" src="/public/Char_01.png" alt="Character 01">
       <img class="character-img02" src="/public/Char_02.png" alt="Character 02">
-      <img class="cloud1-1" src="/public/Cloud1.png" alt="Cloud 1">
+      <img class="cloud1-1" src="/public/Cloud3.png" alt="Cloud 1">
       <img class="cloud1-2" src="/public/Cloud1.png" alt="Cloud 1">
-      <img class="cloud2-1" src="/public/Cloud2.png" alt="Cloud 2">
+      <img class="cloud2-1" src="/public/Cloud2.png" alt="Cloud 1">
       <p class="rubikRetroFont">WEB PORTFOLIO!</p>
       <p class="subText">graphic design + front-end amateur + user experience</p>
 
@@ -153,18 +153,37 @@
 </div>
 
  <!-- Contact Popup Window -->
-    <div id="contactPopup" class="retro-popup hidden">
-      <div id="contactHeader" class="popup-header">
-        <span>ron-contact.html</span>
-        <button class="close-btn" onclick="closePopup('#contactPopup')">[ X ]</button>
-      </div>
-      <div class="popup-content">
-        <div class="contact-me-logo">
-          <img src="/contact/contact_me.svg" alt="Contact Me Logo" class="contact-me-logo-img">
-        </div>
-        <p class="contactMeDescription">Feel free to reach out to me for any inquiries or collaborations!</p>
-      </div>
+<div id="contactPopup" class="retro-popup hidden">
+  <div id="contactHeader" class="popup-header">
+    <span>ron-contact.html</span>
+    <button class="close-btn" onclick="closePopup('#contactPopup')">[ X ]</button>
+  </div>
+  <div class="popup-content">
+    <div class="contact-me-logo">
+      <img src="/contact/contact_me.svg" alt="Contact Me Logo" class="contact-me-logo-img">
     </div>
+    <p class="contactMeDescription">
+      Feel free to reach out to me for any inquiries or collaborations!
+    </p>
+  <!-- Contact Form Box -->
+<div class="contact-sheet-box" style="margin-top: 10rem;">
+  <h2 class="contact-sheet-title">Contact Sheet</h2>
+  <form class="contact-form" action="https://formspree.io/f/mnnvbbvy" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="retro-button btn-contact">Send</button>
+  </form>
+</div>
+</form>
+    <!-- Or, add your email/social links here --> 
+<!--    <div class="contact-links">
+      <a href="mailto:your@email.com">your@email.com</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>-->
+      <!-- Add more links as needed -->
+    </div>
+  </div>
+</div>
 
 <!-- Footer -->
     <footer class="footer">
