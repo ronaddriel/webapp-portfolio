@@ -168,14 +168,20 @@
   <!-- Contact Form Box -->
 <div class="contact-sheet-box" style="margin-top: 10rem;">
   <h2 class="contact-sheet-title">Contact Sheet</h2>
-  <form class="contact-form" action="https://formspree.io/f/mnnvbbvy" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit" class="retro-button btn-contact">Send</button>
-  </form>
-</div>
+<form id="contactForm" class="contact-form" action="https://formspree.io/f/mnnvbbvy" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit" class="retro-button btn-contact">Send</button>
 </form>
+<div id="form-success" style="display:none; color:green; margin-top:1rem;">
+  Thank you! Your message has been sent.
+  <div>
+  <button id="resend-btn" class="retro-button btn-contact" style="margin-top:1rem;">Back</button>
+  </div>
+</div>
+</div>
+
     <!-- Or, add your email/social links here --> 
 <!--    <div class="contact-links">
       <a href="mailto:your@email.com">your@email.com</a>

@@ -459,11 +459,11 @@
   max-height: 650px; /* or your desired value */
 }
 #contactPopup{
-  width: 700px;
-  height: 500px;
+  width: 800px;
+  height: 650px;
 }
 #contactPopup .popup-content {
-  max-height: 450px; /* or your desired value */
+  max-height: 600px; /* or your desired value */
 }
 .aboutMeBio {
   font-family: 'Young Serif', serif;
@@ -872,7 +872,7 @@
   background: #fffcef;
   border: 3px solid #2c2827;
   border-radius: 14px;
-  box-shadow: 4px 4px 0 #e0d6c3;
+  box-shadow: 4px 4px 0 #2c2827;
   padding: 2rem 1.5rem;
   margin: 2rem auto;
   max-width: 400px;
