@@ -27,49 +27,49 @@
   margin-top: 20.5rem;
 }
 .cloud1-1{
- position: absolute;
-  top: 0.5rem;
-  left: -7.5rem;
-  width: 22%;
-  height: auto;
-  object-fit: contain;
-  z-index: 2;
+     position: absolute;
+    top: -4.5rem;
+    left: -7.5rem;
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+    z-index: 2;
 }
 .cloud1-2{
     position: absolute;
-    top: 2.91rem;
+   top: -0.09rem;
     left: -1.5rem;
-    width: 25%;
+    width: 30%;
     height: auto;
     object-fit: contain;
     z-index: 2;
 }
 .cloud2-1{
   position: absolute;
-    top: 4.5rem;
+ top: 1.5rem;
     left: -11.5rem;
-    width: 27%;
+    width: 30%;
     height: auto;
     object-fit: contain;
     z-index: 3;
 }
 .character-img01{
-    position: absolute;
+   position: absolute;
     top: -2.2rem;
-    left: 41.2rem;
-    width: 40%;
+    left: 43.2rem;
+    width: 42%;
     height: auto;
     object-fit: contain;
     z-index: 4;
 }
 .character-img02{
-  position: absolute;
-  top: 15rem;
-  left: -8.5rem;
-  width: 40%;
-  height: auto;
-  object-fit: contain;
-  z-index: -1;
+position: absolute;
+    top: 12rem;
+    left: -12.5rem;
+    width: 48%;
+    height: auto;
+    object-fit: contain;
+    z-index: -1;
 }
 
 .character-img01,
@@ -156,7 +156,7 @@
   border-bottom: 4px solid #2c2827;
   letter-spacing: 1px;
   text-align: center;
-  background-color: #63f6aa;
+  background-color: #e4ff98;
   font-size: 1.2rem;
   width: 100%;
   box-sizing: border-box;
@@ -202,20 +202,34 @@
 }
 
 .ronManosca{
-  position: absolute;
-  top: 7.3rem;
-  left: 0.5rem;
-  width: 45rem;
-  letter-spacing: 0.01rem; 
-  padding: 0;
-  margin: 0;
-  z-index: 10;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+position: absolute;
+    top: 7.3rem;
+    left: -0.3rem;
+    width: 49rem;
+    letter-spacing: 0.01rem;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.logo-retro-box {
+     background: #fffcef;
+    border: 4px solid #2c2827;
+    border-radius: 14px;
+    box-shadow: 3px 4px 0 #2c2827;
+    display: flex
+  ;
+    justify-content: center;
+    align-items: center;
+    margin: -1rem auto;
+    left: 2rem;
+    max-width: 42rem;
+    height: 11rem;
+  
+}
 .jockeyOneRetroFont{
   font-family: 'Jockey One', sans-serif;
    -webkit-text-stroke: 0.05rem #2c2827;
@@ -769,15 +783,7 @@
     align-items: center;
     justify-content: flex-start;
   }
-  .main-menu-header {
-    font-size: 1rem;
-    padding: 0.5rem 0.5rem;
-    margin-bottom: 0rem;
-    border-radius: 9px 9px 0 0;
-    width: 100%;
-    top: 100vh;
-    box-sizing: border-box;
-  }
+  
   .nav-buttons-home {
     flex-direction: row;
     gap: 1.2rem;
