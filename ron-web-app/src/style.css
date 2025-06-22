@@ -11,6 +11,9 @@
    color: var(--foreground);
    font-feature-settings: "rlig" 1, "calt" 1;
    font-family: 'Jockey One', sans-serif;
+   background: url('/public/background.png') no-repeat center center fixed;
+    background-size: cover;
+
   }
 
   .font-jockey {
@@ -156,7 +159,7 @@ position: absolute;
   border-bottom: 4px solid #2c2827;
   letter-spacing: 1px;
   text-align: center;
-  background-color: #e4ff98;
+  background-color: #98ffc5;
   font-size: 1.2rem;
   width: 100%;
   box-sizing: border-box;
@@ -745,7 +748,7 @@ position: absolute;
 
 .footer {
   width: 100%;
-  background: #fff4d2;
+  background: #85c498;
   padding: 0.5rem 0;
   text-align: center;
   font-family: 'Rubik Mono One', monospace;
