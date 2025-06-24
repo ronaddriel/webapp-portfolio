@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Rubik+Mono+One&family=Young+Serif&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Jockey+One&family=Press+Start+2P&family=Rubik+Mono+One&family=Young+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jockey+One&family=Press+Start+2P&family=Rubik+Mono+One&family=Sono:wght@200..800&family=Young+Serif&display=swap");
-@import 'tailwindcss';
+
 
   body {
    overflow: hidden;
@@ -11,7 +11,7 @@
    color: var(--foreground);
    font-feature-settings: "rlig" 1, "calt" 1;
    font-family: 'Jockey One', sans-serif;
-   background: url('public/background.png') no-repeat center center fixed;
+   background: url('/public/background.png') no-repeat center center fixed;
     background-size: cover;
 
   }
