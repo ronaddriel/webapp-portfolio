@@ -145,7 +145,7 @@ position: absolute;
   padding-right: 0;
   padding-top: 0;
   position: absolute;
-  top: 50%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: retroPopIn 0.5s ease-out;
@@ -383,6 +383,18 @@ position: absolute;
   display: none;
 }
 
+.tools-section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0 2rem 1rem;
+}
+
+.tool-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
 .about-me-logo {
   display: flex;
   align-items: center;
@@ -457,7 +469,7 @@ position: absolute;
   margin-right: auto;
   line-height: 1.2;
   color: #2d2626;
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 0.001rem;
 }
 
@@ -898,4 +910,49 @@ position: absolute;
   font-size: 1.3rem;
   margin-bottom: 1.2rem;
   letter-spacing: 1px;
+}
+
+.tool-retro-button {
+  background: #ffde7c;
+  border: 3.5px solid #2c2827;
+  border-radius: 10px;
+  font-family: 'Rubik Mono One', monospace;
+  color: #2c2827;
+  font-size: 1rem;
+  padding: 0.7rem 1.2rem;
+  box-shadow: 2px 2px 0 #2c2827;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  outline: none;
+  margin: 0;
+  position: relative;
+}
+
+.tool-retro-button:active {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 0 #e0d6c3;
+}
+
+/* Sparkle animation */
+@keyframes sparkle {
+  0% {
+    box-shadow: 0 0 0 0 #fffbe4, 0 0 0 0 #ffe066;
+    filter: brightness(1);
+  }
+  30% {
+    box-shadow: 0 0 16px 8px #ffe066, 0 0 32px 16px #fffbe6;
+    filter: brightness(1.2);
+  }
+  60% {
+    box-shadow: 0 0 8px 4px #ffe066, 0 0 16px 8px #fffbe6;
+    filter: brightness(1.1);
+  }
+  100% {
+    box-shadow: 0 0 0 0 #fffbe6, 0 0 0 0 #ffe066;
+    filter: brightness(1);
+  }
+}
+
+.sparkle {
+  animation: sparkle 0.7s cubic-bezier(.68,-0.55,.27,1.55);
 }

@@ -135,6 +135,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  
   // Contact
   const contactBtn = document.getElementById('openContactBtn');
   if (contactBtn) {
@@ -174,7 +175,15 @@ window.addEventListener('DOMContentLoaded', () => {
       if (formSuccess) formSuccess.style.display = 'none';
     });
   }
-
+ // Sparkle animation for tool buttons
+  document.querySelectorAll('.tools-section-grid .tool-retro-button').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      btn.classList.remove('sparkle'); 
+      void btn.offsetWidth; 
+      btn.classList.add('sparkle');
+    });
+  });
 
 
 window.closePopup = closePopup;
