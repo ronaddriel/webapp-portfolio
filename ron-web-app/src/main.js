@@ -1,4 +1,3 @@
-import './style.css';
 
 let topZ = 1000; // Global z-index tracker
 
@@ -19,7 +18,7 @@ function getRandomPosition(popupWidth, popupHeight) {
   return { left, top };
 }
 
-export function makeDraggable(popupSelector, headerSelector) {
+function makeDraggable(popupSelector, headerSelector) {
   const popup = document.querySelector(popupSelector);
   const header = document.querySelector(headerSelector);
 

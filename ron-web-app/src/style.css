@@ -11,7 +11,7 @@
    color: var(--foreground);
    font-feature-settings: "rlig" 1, "calt" 1;
    font-family: 'Jockey One', sans-serif;
-   background: url('/public/background.png') no-repeat center center fixed;
+   background: url('/background.png') no-repeat center center fixed;
     background-size: cover;
 
   }
@@ -478,21 +478,21 @@ position: absolute;
   height: 600px;
 }
 #aboutPopup .popup-content {
-  max-height: 550px; /* or your desired value */
+  max-height: 525px; /* or your desired value */
 }
 #galleryPopup{
   width: 1050px;
   height: 700px;
 }
 #galleryPopup .popup-content {
-  max-height: 650px; /* or your desired value */
+  max-height: 625px; /* or your desired value */
 }
 #contactPopup{
   width: 800px;
   height: 650px;
 }
 #contactPopup .popup-content {
-  max-height: 600px; /* or your desired value */
+  max-height: 575px; /* or your desired value */
 }
 .aboutMeBio {
   font-family: 'Young Serif', serif;
