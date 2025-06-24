@@ -11,7 +11,7 @@
    color: var(--foreground);
    font-feature-settings: "rlig" 1, "calt" 1;
    font-family: 'Jockey One', sans-serif;
-   background: url('/public/background.png') no-repeat center center fixed;
+   background: url('public/background.png') no-repeat center center fixed;
     background-size: cover;
 
   }
