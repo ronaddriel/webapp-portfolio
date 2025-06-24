@@ -677,10 +677,10 @@ position: absolute;
   z-index: 2;
 }
 .gallery-item {
-  background: #fffcef;
-  border: 2px solid #2c2827;
+  background: #191717;
+  border: 3px solid #191717;
   border-radius: 10px;
-  box-shadow: 2px 2px 0 #e0d6c3;
+  box-shadow: 2px 2px 0 #191717;
   overflow: hidden;
   text-align: center;
   transition: transform 0.2s;
@@ -794,7 +794,10 @@ position: absolute;
     align-items: center;
   }
   .character-img01,
-  .character-img02 {
+  .character-img02,
+  .cloud1-1,
+  .cloud1-2,
+  .cloud2-1 {
     display: none;
   }
   .ronManosca,
