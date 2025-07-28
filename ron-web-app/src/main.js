@@ -84,7 +84,7 @@ function openPopup(popupSelector, headerSelector) {
   popup.classList.add('retroPopup-fadein');
   popup.style.zIndex = 9999;
 
-   topZ += 1;
+  topZ += 1;
   popup.style.zIndex = topZ;
 
   const popupWidth = popup.offsetWidth;
@@ -134,7 +134,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  
+
   // Contact
   const contactBtn = document.getElementById('openContactBtn');
   if (contactBtn) {
@@ -144,45 +144,45 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 // Contact Formspree AJAX handler
-   const contactForm = document.getElementById('contactForm');
-  const formSuccess = document.getElementById('form-success');
-  const resendBtn = document.getElementById('resend-btn');
+const contactForm = document.getElementById('contactForm');
+const formSuccess = document.getElementById('form-success');
+const resendBtn = document.getElementById('resend-btn');
 
-  if (contactForm) {
-    contactForm.addEventListener('submit', async function(e) {
-      e.preventDefault();
-      const form = e.target;
-      const data = new FormData(form);
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      });
-      if (response.ok) {
-        form.style.display = 'none';
-        if (formSuccess) formSuccess.style.display = 'block';
-      }
+if (contactForm) {
+  contactForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
     });
-  }
-
-  if (resendBtn) {
-    resendBtn.addEventListener('click', function() {
-      if (contactForm) {
-        contactForm.reset();
-        contactForm.style.display = '';
-      }
-      if (formSuccess) formSuccess.style.display = 'none';
-    });
-  }
- // Sparkle animation for tool buttons
-  document.querySelectorAll('.tools-section-grid .tool-retro-button').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-      e.preventDefault();
-      btn.classList.remove('sparkle'); 
-      void btn.offsetWidth; 
-      btn.classList.add('sparkle');
-    });
+    if (response.ok) {
+      form.style.display = 'none';
+      if (formSuccess) formSuccess.style.display = 'block';
+    }
   });
+}
+
+if (resendBtn) {
+  resendBtn.addEventListener('click', function () {
+    if (contactForm) {
+      contactForm.reset();
+      contactForm.style.display = '';
+    }
+    if (formSuccess) formSuccess.style.display = 'none';
+  });
+}
+// Sparkle animation for tool buttons
+document.querySelectorAll('.tools-section-grid .tool-retro-button').forEach(btn => {
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    btn.classList.remove('sparkle');
+    void btn.offsetWidth;
+    btn.classList.add('sparkle');
+  });
+});
 
 
 window.closePopup = closePopup;
