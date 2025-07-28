@@ -4,122 +4,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Jockey+One&family=Press+Start+2P&family=Rubik+Mono+One&family=Sono:wght@200..800&family=Young+Serif&display=swap");
 
 
-  body {
-   overflow: hidden;
-   height: 100%; 
-   background: var(--background);
-   color: var(--foreground);
-   font-feature-settings: "rlig" 1, "calt" 1;
-   font-family: 'Jockey One', sans-serif;
-   background: url('/background.png') no-repeat center center fixed;
-    background-size: cover;
+body {
+  overflow: hidden;
+  height: 100%;
+  background: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "rlig" 1, "calt" 1;
+  font-family: 'Jockey One', sans-serif;
+  background: url('/background.png') no-repeat center center fixed;
+  background-size: cover;
 
-  }
+}
 
-  .font-jockey {
-    font-family: 'Jockey One', sans-serif;
-  }
+.font-jockey {
+  font-family: 'Jockey One', sans-serif;
+}
 
-  .font-rubik {
-    font-family: 'Rubik Mono One', monospace;
-  }
+.font-rubik {
+  font-family: 'Rubik Mono One', monospace;
+}
 
 .nav-buttons-home {
   display: flex;
   gap: 5rem;
   margin-top: 20.5rem;
 }
-.cloud1-1{
-     position: absolute;
-    top: -4.5rem;
-    left: -7.5rem;
-    width: 30%;
-    height: auto;
-    object-fit: contain;
-    z-index: 2;
-}
-.cloud1-2{
-    position: absolute;
-   top: -0.09rem;
-    left: -1.5rem;
-    width: 30%;
-    height: auto;
-    object-fit: contain;
-    z-index: 2;
-}
-.cloud2-1{
-  position: absolute;
- top: 1.5rem;
-    left: -11.5rem;
-    width: 30%;
-    height: auto;
-    object-fit: contain;
-    z-index: 3;
-}
-.character-img01{
-   position: absolute;
-    top: -2.2rem;
-    left: 43.2rem;
-    width: 42%;
-    height: auto;
-    object-fit: contain;
-    z-index: 4;
-}
-.character-img02{
-position: absolute;
-    top: 12rem;
-    left: -12.5rem;
-    width: 48%;
-    height: auto;
-    object-fit: contain;
-    z-index: -1;
+
+
+.ronManosca{
+  transition: transform 0.35s cubic-bezier(.68, -0.55, .27, 1.55);
 }
 
-.character-img01,
-.character-img02,
-.ronManosca,.cloud1-1,
-.cloud1-2,
-.cloud2-1 {
-  transition: transform 0.35s cubic-bezier(.68,-0.55,.27,1.55);
-}
 
-.character-img01:hover,
-.character-img02:hover,
-.ronManosca:hover, .cloud1-1:hover,
-.cloud1-2:hover,
-.cloud2-1:hover {
+.ronManosca:hover{
   transform: scale(1.03);
-  
+  transform: translateY(-2px);
+
 }
 
 
 .retro-button {
-  background-color: #ffda84;
-  border: 3px solid #2c2827;
-  border-radius: 3rem;
-  padding: 0.75rem 1.5rem;
-  font-family: 'Jockey One', sans-serif;
-  font-size: 1.25rem;
-  color: #2c2827;
-  box-shadow: 3px 3px 0px #2c2827;
-  cursor: pointer;
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
+    border: 3px solid #2c2827;
+    border-radius: 2.5rem;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 1.25rem;
+    color: #2c2827;
+    box-shadow: 3px 3px 0px #2c2827;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
+
 .btn-about {
-  background-color: #ff5a5a; 
-  
+  background-color: #ff5a5a;
+
 }
+
 .btn-gallery {
-  background-color: #f8ff71; 
- 
+  background-color: #f8ff71;
+
 }
+
 .btn-contact {
   background-color: #73efff;
 }
+
 /* Hover effect */
-.retro-button:hover {
+.retro-button:hover  {
   transform: translateY(-2px);
-  scale:calc(1.05);
+  scale: calc(1.05);
+  
 }
 
 /* Click (active) effect */
@@ -127,9 +81,10 @@ position: absolute;
   transform: scale(0.95);
   box-shadow: 2px 2px 0px #2c2827;
 }
+
 /* Retro Window Home */
 .retro-window-home {
- background-color: #fff4d2;
+  background-color: #fff8e5;
   border: 5px solid #2c2827;
   border-radius: 20px;
   box-shadow: 4px 4px 0px #2c2827;
@@ -138,7 +93,7 @@ position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;  
+  justify-content: flex-start;
   text-align: center;
   padding: 1.5rem;
   padding-left: 0;
@@ -150,32 +105,36 @@ position: absolute;
   transform: translate(-50%, -50%);
   animation: retroPopIn 0.5s ease-out;
 }
+
 .main-menu-header {
-  align-self: stretch;        
-  font-family: 'jockey One', sans-serif;
-  color: #2c2827;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom: 4px solid #2c2827;
-  letter-spacing: 1px;
-  text-align: center;
-  background-color: #98ffc5;
-  font-size: 1.2rem;
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 1.5rem;
-  padding: 0.5rem 1rem;
+  align-self: stretch;
+    font-family: 'jockey One', sans-serif;
+    color: #2c2827;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 4px solid #2c2827;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: #fff389;
+    font-size: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
 }
+
 /*Retro Animation*/
 @keyframes retroPopIn {
   0% {
     transform: translate(-50%, -50%) scale(0.5);
     opacity: 0;
   }
+
   70% {
     transform: translate(-50%, -50%) scale(1.1);
     opacity: 1;
   }
+
   100% {
     transform: translate(-50%, -50%) scale(1);
   }
@@ -186,6 +145,7 @@ position: absolute;
     opacity: 1;
     transform: scale(1);
   }
+
   to {
     opacity: 0;
     transform: scale(0.7);
@@ -193,7 +153,7 @@ position: absolute;
 }
 
 .retroPopup-close {
-  animation: retroPopupClose 0.3s cubic-bezier(.68,-0.55,.27,1.55) forwards;
+  animation: retroPopupClose 0.3s cubic-bezier(.68, -0.55, .27, 1.55) forwards;
 }
 
 .font-jockey {
@@ -204,57 +164,56 @@ position: absolute;
   font-family: 'Rubik Mono One', monospace;
 }
 
-.ronManosca{
-position: absolute;
-    top: 7.3rem;
-    left: -0.3rem;
-    width: 49rem;
-    letter-spacing: 0.01rem;
-    padding: 0;
-    margin: 0;
+.ronManosca {
+  position: absolute;
+    top: 6.3rem;
+    left: 1rem;
+    width: 51rem;
     z-index: 10;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .logo-retro-box {
-     background: #fffcef;
-    border: 4px solid #2c2827;
-    border-radius: 14px;
-    box-shadow: 3px 4px 0 #2c2827;
-    display: flex
-  ;
-    justify-content: center;
-    align-items: center;
-    margin: -1rem auto;
-    left: 2rem;
-    max-width: 42rem;
-    height: 11rem;
-  
+  background: #fffcef;
+  border: 4px solid #2c2827;
+  border-radius: 14px;
+  box-shadow: 3px 4px 0 #2c2827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -1rem auto;
+  left: 2rem;
+  max-width: 42rem;
+  height: 11rem;
+
 }
-.jockeyOneRetroFont{
+
+.jockeyOneRetroFont {
   font-family: 'Jockey One', sans-serif;
-   -webkit-text-stroke: 0.05rem #2c2827;
+  -webkit-text-stroke: 0.05rem #2c2827;
   font-size: 6.5rem;
   font-weight: bold;
   text-shadow: 2px 2px 0px #2c2827;
-  color: var(--retro-font-color, #80BCBD); /*fallback color*/
+  color: var(--retro-font-color, #80BCBD);
+  /*fallback color*/
   position: absolute;
-  top: 7.75rem; 
-  left: 4.44rem; 
-  width: 27.56rem; 
-  height: 7.63rem; 
-  font-size: 5.63rem; 
+  top: 7.75rem;
+  left: 4.44rem;
+  width: 27.56rem;
+  height: 7.63rem;
+  font-size: 5.63rem;
   line-height: 1;
-  letter-spacing: 0.01rem; 
+  letter-spacing: 0.01rem;
   padding: 0;
   margin: 0;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .jockey-span-green {
@@ -265,21 +224,20 @@ position: absolute;
   color: #4681ff;
 }
 
-.jockey-span-green, .jockey-span-blue {
+.jockey-span-green,
+.jockey-span-blue {
   -webkit-text-stroke: 0.05rem #2c2827;
   text-shadow: 2px 2px 0px #2c2827;
 }
 
-.rubikRetroFont{
-  font-family: 'press Start 2P';
+.rubikRetroFont {
+      font-family: 'press Start 2P';
     position: absolute;
     top: 17.5rem;
-    left: 9.4rem;
+    left: 6.4rem;
     width: 43.69rem;
-    height: 3.13rem;
-    font-size: 3rem;
+    font-size: 3.1rem;
     line-height: 1;
-    letter-spacing: 0.06rem;
     color: #2c2827;
     background-color: transparent;
     padding: 0;
@@ -290,22 +248,21 @@ position: absolute;
     justify-content: center;
 }
 
-.subText{
-    position: absolute;
+.subText {
+      position: absolute;
     top: 21rem;
     left: 10rem;
-    width: 43.63rem;
+    width: 32.63rem;
     height: 2.38rem;
     font-family: 'Jockey One', sans-serif;
     font-size: 1.50rem;
     color: #2c2827;
-    line-height: 1;
+    line-height: 0;
     letter-spacing: 0.06rem;
     padding: 0;
     margin: 0;
     text-align: center;
-    display: flex
-;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-style: italic;
@@ -325,23 +282,28 @@ position: absolute;
   z-index: 1000;
 
 }
+
 @keyframes retroPopupFadeIn {
   from {
     opacity: 0;
     transform: scale(0.7);
   }
+
   60% {
     opacity: 1;
     transform: scale(1.08);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
   }
 }
+
 .retroPopup-fadein {
-  animation: retroPopupFadeIn 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+  animation: retroPopupFadeIn 0.4s cubic-bezier(.68, -0.55, .27, 1.55);
 }
+
 .popup-header {
   position: sticky;
   top: 0;
@@ -362,13 +324,14 @@ position: absolute;
 .popup-content {
   display: flex;
   flex-direction: column;
-  align-items: center;      /* horizontal centering */
+  align-items: center;
+  /* horizontal centering */
   padding: 1rem;
   font-family: 'Rubik Mono One', monospace;
   color: #2c2827;
   font-size: 0.95rem;
   max-height: 550px;
-  overflow-y: auto;    
+  overflow-y: auto;
 }
 
 .close-btn {
@@ -396,6 +359,7 @@ position: absolute;
   align-items: center;
   gap: 0.6rem;
 }
+
 .about-me-logo {
   display: flex;
   align-items: center;
@@ -409,11 +373,12 @@ position: absolute;
   max-height: 100%;
   height: auto;
   width: auto;
-   margin-top: 7rem;
+  margin-top: 7rem;
   object-fit: contain;
   margin-left: 1rem;
-  
+
 }
+
 .gallery-logo-img {
   max-width: 100%;
   max-height: 100%;
@@ -423,23 +388,25 @@ position: absolute;
   object-fit: contain;
   margin-left: 1rem;
 }
+
 .contact-me-logo {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-.contact-me-logo-img{
+
+.contact-me-logo-img {
   max-width: 100%;
   max-height: 100%;
   height: auto;
   width: auto;
-   margin-top: 5rem;
+  margin-top: 5rem;
   object-fit: contain;
   margin-left: 1rem;
 }
 
-.contactMeDescription{
+.contactMeDescription {
   font-family: 'Rubik Mono One', monospace;
   text-align: center;
   margin-left: auto;
@@ -474,27 +441,36 @@ position: absolute;
   letter-spacing: 0.001rem;
 }
 
-#aboutPopup{
-  width: 800px;
+#aboutPopup {
+  width: 900px;
   height: 600px;
 }
+
 #aboutPopup .popup-content {
-  max-height: 525px; /* or your desired value */
+  max-height: 525px;
+  /* or your desired value */
 }
-#galleryPopup{
-  width: 1050px;
+
+#galleryPopup {
+  width: 1250px;
   height: 700px;
 }
+
 #galleryPopup .popup-content {
-  max-height: 625px; /* or your desired value */
+  max-height: 625px;
+  /* or your desired value */
 }
-#contactPopup{
-  width: 800px;
+
+#contactPopup {
+  width: 900px;
   height: 650px;
 }
+
 #contactPopup .popup-content {
-  max-height: 575px; /* or your desired value */
+  max-height: 575px;
+  /* or your desired value */
 }
+
 .aboutMeBio {
   font-family: 'Young Serif', serif;
   font-size: 1rem;
@@ -503,7 +479,7 @@ position: absolute;
   margin: 1.2rem 0;
   line-height: 1.6;
   letter-spacing: 0.01em;
-  
+
 }
 
 .aboutMeBioBox {
@@ -513,21 +489,21 @@ position: absolute;
   padding: 1rem 1.2rem;
   margin-bottom: 1rem;
   border-radius: 11px;
-  transition: transform 0.25s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.25s;
+  transition: transform 0.25s cubic-bezier(.68, -0.55, .27, 1.55), box-shadow 0.25s;
   cursor: pointer;
 }
 
 .aboutMeBioBox ul {
   list-style: disc inside;
-  padding-left: 1.2em; 
+  padding-left: 1.2em;
   margin: 0.5em 0;
   font-family: 'Young Serif', serif;
   font-size: 1.1rem;
 }
 
-.aboutMeBioBox:hover{
- transform: scale(1.03);
- z-index: 2;
+.aboutMeBioBox:hover {
+  transform: scale(1.03);
+  z-index: 2;
 }
 
 .aboutMeBioBox:last-child {
@@ -536,47 +512,53 @@ position: absolute;
 
 .aboutMeBioBox p {
   margin: 0;
-   font-family: 'Sono', monospace;
+  font-family: 'Sono', monospace;
   font-size: 1.05rem;
-    font-weight: 600;
+  font-weight: 600;
   color: #2c2827;
   line-height: 1.6;
   text-indent: 2em;
   font-variation-settings:
     "MONO" 1;
 }
+
 .aboutMeBioBox li {
   font-family: 'Sono', monospace;
   font-size: 1.05rem;
-    font-weight: 600;
+  font-weight: 600;
   color: #2c2827;
-   font-variation-settings:
+  font-variation-settings:
     "MONO" 1;
 }
 
 @media (max-width: 600px) {
   #aboutPopup {
-    width: 95vw;
-    height: 90vh;
-    min-width: 0;
-    min-height: 0;
-    left: 2.5vw !important;
-    top: 5vh !important;
-    border-radius: 12px;
+width: 93vw;
+        height: 68vh;
+        min-width: 0;
+        min-height: 0;
+        left: 2.5vw !important;
+        top: 16vh !important;
+        border-radius: 12px;
   }
+
   #aboutPopup .popup-content {
-    max-height: 82.5vh;
+    max-height: 59.5vh;
+    max-width: 200vw;
     padding: 0.5rem;
     font-size: 0.95rem;
   }
+
   .aboutMeBioBox {
     padding: 0.7rem 0.5rem;
     font-size: 0.95rem;
   }
+
   .aboutMeDescription {
     font-size: 0.95rem;
     padding: 0.5rem 0.2rem;
   }
+
   .about-me-logo-img {
     max-width: 400px;
     max-height: 400px;
@@ -587,7 +569,7 @@ position: absolute;
 
 @media (max-width: 600px) {
   #galleryPopup {
-    width: 95vw;
+    width: 93vw;
     height: 90vh;
     min-width: 0;
     min-height: 0;
@@ -595,19 +577,23 @@ position: absolute;
     top: 5vh !important;
     border-radius: 12px;
   }
+
   #galleryPopup .popup-content {
     max-height: 80vh;
     padding: 0.5rem;
     font-size: 0.95rem;
   }
+
   .galleryBioBox {
     padding: 0.7rem 0.5rem;
     font-size: 0.95rem;
   }
+
   .galleryDescription {
     font-size: 0.95rem;
     padding: 0.5rem 0.2rem;
   }
+
   .gallery-logo-img {
     max-width: 400px;
     max-height: 400px;
@@ -618,7 +604,7 @@ position: absolute;
 
 @media (max-width: 600px) {
   #contactPopup {
-    width: 95vw;
+    width: 93vw;
     height: 90vh;
     min-width: 0;
     min-height: 0;
@@ -626,19 +612,23 @@ position: absolute;
     top: 5vh !important;
     border-radius: 12px;
   }
+
   #contactPopup .popup-content {
     max-height: 80vh;
     padding: 0.5rem;
     font-size: 0.95rem;
   }
+
   .contactBioBox {
     padding: 0.7rem 0.5rem;
     font-size: 0.95rem;
   }
+
   .contactMeDescription {
     font-size: 0.95rem;
     padding: 0.5rem 0.2rem;
   }
+
   .contact-me-logo-img {
     max-width: 400px;
     max-height: 400px;
@@ -652,17 +642,20 @@ position: absolute;
 }
 
 .popup-content::-webkit-scrollbar-track {
-  background: transparent; /* Makes the track (white part) invisible */
+  background: transparent;
+  /* Makes the track (white part) invisible */
 }
 
 .popup-content::-webkit-scrollbar-thumb {
-  background: #888;        /* Gray thumb */
+  background: #888;
+  /* Gray thumb */
   border-radius: 8px;
 }
 
 /* Firefox */
 .popup-content {
-  scrollbar-color: #888 transparent; /* thumb color, track color */
+  scrollbar-color: #888 transparent;
+  /* thumb color, track color */
   scrollbar-width: thin;
 }
 
@@ -674,6 +667,7 @@ position: absolute;
   gap: 1.2rem;
   margin-top: 1.5rem;
 }
+
 .gallery-grid-box {
   background: #fffcef;
   border: 3px solid #2c2827;
@@ -681,7 +675,7 @@ position: absolute;
   box-shadow: 4px 4px 0 #2c2827;
   padding: 2rem;
   margin: 2rem 0;
-  transition: transform 0.25s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.25s;
+  transition: transform 0.25s cubic-bezier(.68, -0.55, .27, 1.55), box-shadow 0.25s;
 }
 
 .gallery-grid-box:hover {
@@ -689,6 +683,7 @@ position: absolute;
   box-shadow: 5px 5px 0 #2c2827;
   z-index: 2;
 }
+
 .gallery-item {
   background: #191717;
   border: 3px solid #191717;
@@ -711,17 +706,20 @@ position: absolute;
   object-fit: cover;
   display: block;
 }
+
 /* Responsive: stack columns on small screens */
 @media (max-width: 900px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 600px) {
   .gallery-grid {
     grid-template-rows: 1fr;
   }
 }
+
 .full-image-viewer {
   position: fixed;
   inset: 0;
@@ -731,29 +729,34 @@ position: absolute;
   justify-content: center;
   z-index: 9999;
 }
+
 .full-image-viewer img {
   max-width: 90vw;
   max-height: 90vh;
   border-radius: 12px;
   box-shadow: 0 8px 32px #000a;
 }
+
 .full-image-viewer.hidden {
   display: none;
 }
+
 .video-responsive {
- position: relative;
+  position: relative;
   padding-bottom: 30.25%;
   height: 0;
   overflow: hidden;
-  max-width: 500px;     
-  margin: 2rem auto;    
+  max-width: 500px;
+  margin: 2rem auto;
   width: 100%;
   border: #2c2827 5px solid;
   border-radius: 10px;
 }
+
 .video-responsive iframe {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   border: 0;
@@ -772,6 +775,7 @@ position: absolute;
   bottom: 0;
   z-index: 100;
 }
+
 .footer-text {
   margin: 0;
   font-size: 0.7rem;
@@ -785,73 +789,71 @@ position: absolute;
     min-height: 30vh;
     height: auto;
     border-radius: 12px;
-   left: 0.5vw;
-        top: 22vh;
+    left: 0.5vw;
+    top: 22vh;
     transform: none;
     position: fixed;
     padding-left: 0rem;
     padding-right: 0;
     box-sizing: border-box;
-     overflow-x: hidden;
+    overflow-x: hidden;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
   }
+
   .main-menu-header {
-    align-self: stretch;
-    font-family: "jockey One", sans-serif;
-    color: rgb(44, 40, 39);
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom: 4px solid rgb(44, 40, 39);
-    letter-spacing: 1px;
-    text-align: center;
-    background-color: rgb(152, 255, 197);
-    font-size: 1.2rem;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: -9.5rem;
-    padding: 0.5rem 1rem;
-}
+            align-self: stretch;
+        font-family: 'jockey One', sans-serif;
+        color: #2c2827;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom: 4px solid #2c2827;
+        letter-spacing: 1px;
+        text-align: center;
+        background-color: #fff389;
+        font-size: 1.2rem;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: -8.5rem;
+        padding: 0.5rem 1rem;
+  }
+
   .nav-buttons-home {
     flex-direction: row;
     gap: 1.2rem;
     margin-top: 10rem;
     align-items: center;
   }
-  .character-img01,
-  .character-img02,
-  .cloud1-1,
-  .cloud1-2,
-  .cloud2-1 {
-    display: none;
-  }
-    .ronManosca {
-     position: absolute !important;
+
+
+  .ronManosca {
+    position: absolute !important;
     width: 93vw !important;
-        max-width: 350px !important;
-        height: auto !important;
-        left: 1rem;
-        top: 0rem;
-        margin: 6rem auto 1rem auto !important;
-        display: block !important;
-        z-index: 10;
-  
+    max-width: 350px !important;
+    height: auto !important;
+    left: 1rem;
+    top: 0rem;
+    margin: 6rem auto 1rem auto !important;
+    display: block !important;
+    z-index: 10;
+
   }
 
-  .rubikRetroFont{
-         position: absolute !important;
-        width: 93vw !important;
-        max-width: 350px !important;
-        height: auto !important;
-        left: 1rem;
-        top: 0rem;
-        margin: 11rem auto 1rem auto !important;
-        display: block !important;
-        z-index: 10;
+  .rubikRetroFont {
+    position: absolute !important;
+    width: 93vw !important;
+    max-width: 350px !important;
+    height: auto !important;
+    left: 1rem;
+    top: 0rem;
+    margin: 11rem auto 1rem auto !important;
+    display: block !important;
+    z-index: 10;
   }
+
   .jockeyOneRetroFont,
   .subText {
         position: static;
@@ -860,34 +862,39 @@ position: absolute;
         top: 10rem;
         font-size: 2rem;
         margin: -9.5rem 0;
-        margin-top: 21.5rem;
+        margin-top: 19.5rem;
         text-align: center;
         height: auto;
         display: block;
   }
+
   .jockeyOneRetroFont {
-    font-size: 2.2rem ;
+    font-size: 2.2rem;
   }
+
   .rubikRetroFont {
-    font-size: 1.2rem ;
+    font-size: 1.2rem;
   }
+
   .subText {
-    font-size: 1rem ;
+    font-size: 1rem;
   }
+
   .footer {
     font-size: 0.7rem;
     padding: 0.3rem 0;
     position: static;
   }
+
   .popup-content {
-    max-height: 50vh;  
-    height: auto;      
+    max-height: 50vh;
+    height: auto;
     padding: 0.5rem;
     font-size: 0.95rem;
     overflow-y: auto;
   }
 }
-  
+
 /* Contact Form Styles */
 
 .contact-form {
@@ -952,41 +959,23 @@ position: absolute;
   letter-spacing: 1px;
 }
 
-.tool-retro-button {
-  background: #ffde7c;
-  border: 3.5px solid #2c2827;
-  border-radius: 10px;
-  font-family: 'Rubik Mono One', monospace;
-  color: #2c2827;
-  font-size: 1rem;
-  padding: 0.7rem 1.2rem;
-  box-shadow: 2px 2px 0 #2c2827;
-  cursor: pointer;
-  transition: transform 0.15s, box-shadow 0.15s;
-  outline: none;
-  margin: 0;
-  position: relative;
-}
-
-.tool-retro-button:active {
-  transform: scale(1.05);
-  box-shadow: 3px 3px 0 #e0d6c3;
-}
-
 /* Sparkle animation */
 @keyframes sparkle {
   0% {
     box-shadow: 0 0 0 0 #fffbe4, 0 0 0 0 #ffe066;
     filter: brightness(1);
   }
+
   30% {
     box-shadow: 0 0 16px 8px #ffe066, 0 0 32px 16px #fffbe6;
     filter: brightness(1.2);
   }
+
   60% {
     box-shadow: 0 0 8px 4px #ffe066, 0 0 16px 8px #fffbe6;
     filter: brightness(1.1);
   }
+
   100% {
     box-shadow: 0 0 0 0 #fffbe6, 0 0 0 0 #ffe066;
     filter: brightness(1);
@@ -994,5 +983,5 @@ position: absolute;
 }
 
 .sparkle {
-  animation: sparkle 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+  animation: sparkle 0.7s cubic-bezier(.68, -0.55, .27, 1.55);
 }
