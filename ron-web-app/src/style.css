@@ -249,10 +249,10 @@ body {
 }
 
 .subText {
-      position: absolute;
+    position: absolute;
     top: 21rem;
     left: 10rem;
-    width: 32.63rem;
+    width: 33.63rem;
     height: 2.38rem;
     font-family: 'Jockey One', sans-serif;
     font-size: 1.50rem;
@@ -921,7 +921,7 @@ width: 93vw;
 }
 
 .contact-form textarea {
-  min-height: 80px;
+  min-height: 200px;
   max-height: 200px;
 }
 
