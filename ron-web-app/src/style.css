@@ -1190,3 +1190,8 @@ width: 93vw;
 }
 
 
+.nav-buttons-home,
+.retro-button {
+  position: relative;
+  z-index: 3000; /* very high so buttons receive clicks */
+}
