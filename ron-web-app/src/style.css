@@ -29,6 +29,47 @@ body {
     mix-blend-mode: normal;
 }
 
+#bubble1{
+ position: fixed;
+    left: 15%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    width: clamp(790px, 15vw, 200px);
+    height: auto;
+    pointer-events: none;
+    opacity: 1;
+    z-index: -1;
+    mix-blend-mode: normal;
+} 
+
+#bubble2{
+  position: fixed;
+      left: 85%;
+      top: 45%;
+      transform: translate(-50%, -50%);
+      width: clamp(800px, 15vw, 200px);
+      height: auto;
+      pointer-events: none;
+      opacity: 1;
+      z-index: -1;
+      mix-blend-mode: normal;
+
+}
+
+#bubble3{
+  position: fixed;
+      left: 15%;
+      top: 80%;
+      transform: translate(-50%, -50%);
+      width: clamp(1000px, 15vw, 200px);
+      height: auto;
+      pointer-events: none;
+      opacity: 1;
+      z-index: -1;
+      mix-blend-mode: normal;
+
+}
+
 /* ensure main content sits above the image */
 #app, .retro-window-home, .popup-content, .footer {
   position: relative;
@@ -1057,4 +1098,84 @@ width: 93vw;
   font-size: 1.3rem;
   margin-bottom: 1.2rem;
   letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+  /* mobile-friendly sizing for decorative bubbles */
+  #bubble1,
+  #bubble2,
+  #bubble3 {
+    position: fixed;
+    height: auto;
+    pointer-events: none;
+    opacity: 0.9;
+    z-index: 0;
+    mix-blend-mode: normal;
+  }
+
+  #bubble1 {
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    width: min(46vw, 220px);
+    max-width: 220px;
+  }
+
+  #bubble2 {
+    left: 70%;
+    top: 82%;
+    transform: translate(0, -50%);
+    width: min(36vw, 200px);
+    max-width: 200px;
+  }
+
+  #bubble3 {
+    left: 8%;
+    bottom: 10%;
+    transform: translate(-50%, 0);
+    width: min(40vw, 220px);
+    max-width: 220px;
+  }
+  #bubble1,
+  #bubble2,
+  #bubble3 {
+    position: fixed;
+    pointer-events: none;
+    opacity: 0.9;
+    z-index: 0;
+    mix-blend-mode: normal;
+    transition: none; /* avoid hover/animation on mobile */
+  }
+
+  /* make them subtler on very small screens */
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #bubble1,
+  #bubble2,
+  #bubble3 {
+    pointer-events: auto; /* allow hover */
+    transition: transform 220ms cubic-bezier(.2,.9,.3,1), opacity 180ms;
+    will-change: transform, opacity;
+    transform-origin: 50% 50%;
+  }
+
+  /* expand by a few percent (~a few pixels) while preserving translate */
+  #bubble1:hover,
+  #bubble1:focus {
+    transform: translate(-50%, -50%) scale(1.03);
+  
+  }
+
+  #bubble2:hover,
+  #bubble2:focus {
+    transform: translate(-50%, -50%) scale(1.03);
+    
+  }
+
+  #bubble3:hover,
+  #bubble3:focus {
+    transform: translate(-50%, -50%) scale(1.03);
+  
+  }
 }
