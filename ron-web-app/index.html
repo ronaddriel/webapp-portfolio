@@ -10,6 +10,7 @@
 </head>
 
 <body class="bg-background text-foreground">
+<img id="chrome-char" src="/chrome_char.png" alt="" aria-hidden="true">  
 
   <!--Main Menu Page-->
   <div class="retro-window-home">
@@ -32,7 +33,7 @@
 
   <!-- About Me Popup Window -->
   <div id="aboutPopup" class="retro-popup hidden">
-    <div id="aboutHeader" class="popup-header" style="background-color: #f56666;">
+    <div id="aboutHeader" class="popup-header" >
       <span>ron-about-me.html</span>
       <button class="close-btn" onclick="closePopup('#aboutPopup')">[ X ]</button>
     </div>
@@ -61,7 +62,7 @@
 
   <!-- Gallery Popup Window -->
   <div id="galleryPopup" class="retro-popup hidden">
-    <div id="galleryHeader" class="popup-header" style="background-color: #f0f566;">
+    <div id="galleryHeader" class="popup-header">
       <span>ron-gallery.html</span>
       <button class="close-btn" onclick="closePopup('#galleryPopup')">[ X ]</button>
     </div>
@@ -137,14 +138,14 @@
     </div>
   </div>
 
-  <!-- Full Image Modal -->
+  <!-- Full Image Viewer -->
   <div id="fullImageViewer" class="full-image-viewer hidden" onclick="this.classList.add('hidden')">
     <img id="fullImage" src="" alt="Full View">
   </div>
 
   <!-- Contact Popup Window -->
   <div id="contactPopup" class="retro-popup hidden">
-    <div id="contactHeader" class="popup-header" style="background-color: #7be2ff;">
+    <div id="contactHeader" class="popup-header" >
       <span>ron-contact.html</span>
       <button class="close-btn" onclick="closePopup('#contactPopup')">[ X ]</button>
     </div>
@@ -172,11 +173,6 @@
         </div>
       </div>
 
-      <!-- Or, add your email/social links here -->
-      <!--    <div class="contact-links">
-      <a href="mailto:your@email.com">your@email.com</a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>-->
-      <!-- Add more links as needed -->
     </div>
   </div>
   </div>
