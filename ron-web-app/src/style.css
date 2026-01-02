@@ -965,12 +965,25 @@ width: 93vw;
         width: 158vw !important;
         max-width: 800px !important;
         height: auto !important;
-        left: 13rem;
+        left: 12.5rem;
         top: -8rem;
         margin: 6rem auto 1rem auto !important;
         display: block !important;
         z-index: 10;
 
+  }
+
+  .ronManosca,
+  .ronManosca * {
+    pointer-events: none !important; /* can't press it or its children */
+    transition: none !important;
+    animation: none !important;
+  }
+
+  /* ensure hover/focus won't apply transforms */
+  .ronManosca:hover,
+  .ronManosca:focus {
+    transform: none !important;
   }
 
   .rubikRetroFont {
