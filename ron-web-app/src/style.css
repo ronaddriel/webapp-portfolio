@@ -89,7 +89,7 @@ body {
 .nav-buttons-home {
   display: flex;
   gap: 5rem;
-  margin-top: 20.5rem;
+  margin-top: 16.5rem;
 }
 
 
@@ -260,16 +260,24 @@ background: linear-gradient(180deg, rgba(211,250,255,0.08), rgba(211,250,255,0.0
   font-family: 'Rubik Mono One', monospace;
 }
 
-.ronManosca {
-  position: absolute;
-    top: 6.3rem;
-    left: 1rem;
-    width: 51rem;
+.ronManosca{
+     position: absolute;
+    top: -4.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    max-width: 2000px;
     z-index: 10;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.35s cubic-bezier(.68, -0.55, .27, 1.55)
+}
+
+/* slightly stronger hover scale so the bigger block feels interactive */
+.ronManosca:hover{
+  transform: translateX(-50%) translateY(-3px) scale(1.08);
 }
 
 .logo-retro-box {
@@ -329,7 +337,7 @@ background: linear-gradient(180deg, rgba(211,250,255,0.08), rgba(211,250,255,0.0
 .rubikRetroFont {
       font-family: 'press Start 2P';
     position: absolute;
-    top: 17.5rem;
+    top: 18.5rem;
     left: 6.4rem;
     width: 43.69rem;
     font-size: 2.1rem;
@@ -346,7 +354,7 @@ background: linear-gradient(180deg, rgba(211,250,255,0.08), rgba(211,250,255,0.0
 
 .subText {
     position: absolute;
-    top: 21rem;
+    top: 30rem;
     left: 10rem;
     width: 33.63rem;
     height: 2.38rem;
@@ -944,23 +952,24 @@ width: 93vw;
   }
 
   .nav-buttons-home {
-   flex-direction: row;
-   gap: 1.2rem;
-   margin-top: 11rem;
-   align-items: center;
+          position: absolute;
+        flex-direction: row;
+        gap: 1.2rem;
+        margin-top: 13rem;
+        align-items: center;
   }
 
 
   .ronManosca {
-    position: absolute !important;
-    width: 93vw !important;
-    max-width: 350px !important;
-    height: auto !important;
-    left: 1rem;
-    top: 0rem;
-    margin: 6rem auto 1rem auto !important;
-    display: block !important;
-    z-index: 10;
+   position: absolute !important;
+        width: 158vw !important;
+        max-width: 800px !important;
+        height: auto !important;
+        left: 13rem;
+        top: -8rem;
+        margin: 6rem auto 1rem auto !important;
+        display: block !important;
+        z-index: 10;
 
   }
 
@@ -978,13 +987,13 @@ width: 93vw;
 
   .jockeyOneRetroFont,
   .subText {
-        position: static;
+               position: absolute;
         width: 110%;
-        left: 0;
-        top: 10rem;
+        left: -20px;
+        top: 15rem;
         font-size: 2rem;
         margin: -9.5rem 0;
-        margin-top: 19.5rem;
+        margin-top: 5.5rem;
         text-align: center;
         height: auto;
         display: block;
