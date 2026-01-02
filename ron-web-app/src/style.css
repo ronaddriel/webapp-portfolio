@@ -34,7 +34,7 @@ body {
     left: 15%;
     top: 20%;
     transform: translate(-50%, -50%);
-    width: clamp(790px, 15vw, 200px);
+    width: clamp(1090px, 15vw, 200px);
     height: auto;
     pointer-events: none;
     opacity: 1;
@@ -47,7 +47,7 @@ body {
       left: 85%;
       top: 45%;
       transform: translate(-50%, -50%);
-      width: clamp(800px, 15vw, 200px);
+      width: clamp(1050px, 15vw, 200px);
       height: auto;
       pointer-events: none;
       opacity: 1;
@@ -1027,7 +1027,7 @@ width: 93vw;
     top: 55%;
     transform: translate(-50%, -50%);
     width: 490vw;        /* fills most of viewport width */
-    max-width: 1500px;   /* cap on larger phones */
+    max-width: 1600px;   /* cap on larger phones */
     height: auto;
     pointer-events: none;
     opacity: 1;
@@ -1179,3 +1179,5 @@ width: 93vw;
   
   }
 }
+
+
