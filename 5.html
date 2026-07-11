@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Shirts Collection | Ron Manosca</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+<div class="sticky-top">
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">RON MANOSCA</div>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="public/Ron Manosca - Resume.pdf" download>Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="scrolling-banner">
+    <div class="scrolling-text">
+      <span>GRAPHIC DESIGNER</span><span>GRAPHIC DESIGNER</span><span>GRAPHIC DESIGNER</span>
+      <span>GRAPHIC DESIGNER</span><span>GRAPHIC DESIGNER</span><span>GRAPHIC DESIGNER</span>
+      <span>GRAPHIC DESIGNER</span><span>GRAPHIC DESIGNER</span><span>GRAPHIC DESIGNER</span>
+    </div>
+  </div>
+</div>
+
+<!-- SHIRTS COLLECTION -->
+<section class="shirts-page">
+ 
+
+
+    <div class="shirts-info-grid">
+      <div class="shirts-description-box">
+        <h3 class="shirts-description-title">Overview</h3>
+        <p>
+          A curated collection of poster-to-shirt designs spanning game franchises and original series. Designed inspired from vintage gaming streetwear. Click any poster to view the full shirt design!
+        </p>
+      </div>      <div class="shirts-deliverables-box">
+        <h3 class="shirts-deliverables-title">Deliverables</h3>
+        <ul class="shirts-deliverables-list">
+          <li>- Poster concept artwork</li>
+          <li>- Shirt-ready design files</li>
+          <li>- Mockup presentation images</li>
+          <li>- High-resolution export-ready assets</li>
+        </ul>
+      </div>    </div>
+
+    <!-- ===== GROUP 1: Survivors ===== -->
+    <div class="shirt-group">
+      <h3 class="shirt-group-title">Dead by Daylight</h3>
+      <div class="shirts-grid">
+        <div class="shirt-item">
+          <img src="/public/Shirts Assets/dwight poster.png" alt="Dwight Poster" class="expandable-img" data-full="/public/Shirts Assets/dwight shirt.png">
+        </div>
+        <div class="shirt-item">
+          <img src="/public/Shirts Assets/meg poster.png" alt="Meg Poster" class="expandable-img" data-full="/public/Shirts Assets/meg shirt.png">
+        </div>
+        <div class="shirt-item">
+          <img src="/public/Shirts Assets/claudette poster.png" alt="Claudette Poster" class="expandable-img" data-full="/public/Shirts Assets/claudette shirt.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== GROUP 2: Bosses ===== -->
+    <div class="shirt-group">
+      <h3 class="shirt-group-title">Elden Ring</h3>
+      <div class="shirts-grid">
+        <div class="shirt-item">
+          <img src="/public/Shirts Assets/radahn poster.png" alt="Radahn Poster" class="expandable-img" data-full="/public/Shirts Assets/radahn shirt.png">
+        </div>
+        <div class="shirt-item">
+          <img src="/public/Shirts Assets/malenia poster.png" alt="Malenia Poster" class="expandable-img" data-full="/public/Shirts Assets/malenia shirt.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== GROUP 3: Monsters ===== -->
+    <div class="shirt-group">
+      <h3 class="shirt-group-title">Minecraft</h3>
+      <div class="shirts-grid">
+        <div class="shirt-item">
+          <img src="/public/Shirts Assets/zombie shirt poster.png" alt="Zombie Poster" class="expandable-img" data-full="/public/Shirts Assets/zombie shirt.png">
+        </div>
+        <div class="shirt-item">
+          <img src="/public/Shirts Assets/skeleton shirt poster.png" alt="Skeleton Poster" class="expandable-img" data-full="/public/Shirts Assets/skeleton shirt.png">
+        </div>
+        <div class="shirt-item">
+          <img src="/public/Shirts Assets/creeper shirt poster.png" alt="Creeper Poster" class="expandable-img" data-full="/public/Shirts Assets/creeper shirt.png">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="imageModal" class="modal">
+  <span class="modal-close">&times;</span>
+  <img class="modal-content" id="expandedImage">
+</div>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <p class="footer-copy">© 2026 Ron Manosca — GRAPHIC DESIGNER</p>
+  </div>
+</footer>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
