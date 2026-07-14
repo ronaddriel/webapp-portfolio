@@ -454,10 +454,10 @@ body::-webkit-scrollbar {
   border-bottom: 3px solid #000;
   color: #333;
 }
-.project-image1 { background-image: url("../Beabadoobee Assets/screengrab1.png"); }
-.project-image2 { background-image: url("../Treats Assets/treat.png"); }
+.project-image1 { background-image: url("../beabadoobee-assets/screengrab1.png"); }
+.project-image2 { background-image: url("../treats-assets/treat.png"); }
 .project-image3 { background-image: url("../Char_01.png"); }
-.project-image4 { background-image: url("../Shroom Houses/New House.png"); }
+.project-image4 { background-image: url("../shroom-houses/New House.png"); }
 .project-image5 { background-image: url("../shirt-assets/dwight_poster.png"); }
 .project-title {
   font-family: 'Courier New', monospace;
