@@ -125,3 +125,35 @@ document.addEventListener('DOMContentLoaded', function() {
     if (e.target === modal) modal.style.display = 'none';
   });
 });
+
+// ===== VIMEO IFRAME LOAD GUARD =====
+document.addEventListener('DOMContentLoaded', function() {
+  const pv = document.querySelector('.project-video');
+  if (!pv) return;
+  const iframe = pv.querySelector('iframe');
+  // build a safe link to the Vimeo page from the iframe src (if present)
+  let vimeoPage = 'https://vimeo.com/1209689826';
+  if (iframe && iframe.src) {
+    const m = iframe.src.match(/video\/(\d+)/);
+    if (m) vimeoPage = `https://vimeo.com/${m[1]}`;
+  }
+
+  const overlay = document.createElement('div');
+  overlay.className = 'video-overlay';
+  overlay.innerHTML = `<a class="video-overlay-link" href="${vimeoPage}" target="_blank" rel="noopener noreferrer">Open video on Vimeo</a>`;
+  pv.appendChild(overlay);
+
+  let loaded = false;
+  if (iframe) {
+    iframe.addEventListener('load', () => {
+      loaded = true;
+      overlay.style.display = 'none';
+    });
+    // if load doesn't fire within 4s, show overlay (covers blocked/slow embeds)
+    setTimeout(() => {
+      if (!loaded) overlay.style.display = 'flex';
+    }, 4000);
+  } else {
+    overlay.style.display = 'flex';
+  }
+});
